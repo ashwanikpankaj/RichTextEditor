@@ -1,0 +1,23 @@
+{
+  "name": "richtexteditor",
+  "version": "1.0.0",
+  "description": "RichTextEditor for editing the text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwanikpankaj/RichTextEditor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwanikpankaj/RichTextEditor/issues"
+  },
+  "homepage": "https://github.com/ashwanikpankaj/RichTextEditor#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
