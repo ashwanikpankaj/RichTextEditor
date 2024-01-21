@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./editor.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Rich Text Editor</title>
-</head>
-<body>
-   
-</body>
+  </head>
+  <body class="bg-cyan-500">
+    <div class="bg-white m-auto rounded-lg p-5" id="editorContainer">
+      <div id="icon-container" class="flex justify-between items-center">
+        <!-- Text Format -->
+        <button id="italic" class="option-button format">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+        <button id="bold" class="option-button format">
+          <i class="fa-solid fa-bold"></i>
+        </button>
+        <button id="strikethrough" class="option-button format">
+          <i class="fa-solid fa-strikethrough"></i>
+        </button>
+        <button id="superscript" class="option-button script">
+          <i class="fa-solid fa-superscript"></i>
+        </button>
+        <button id="underline" class="option-button format">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+        <button id="subscript" class="option-button script">
+          <i class="fa-solid fa-subscript"></i>
+        </button>
+        <button id="insertOrderedList" class="option-button ">
+          <i class="fa-solid fa-list-ol"></i>
+        </button>
+        <button id="insertUnorderedList" class="option-button">
+          <i class="fa-solid fa-list"></i>
+        </button>
+      </div>
+      <!-- editable div -->
+      <div
+        id="editableConatiner"
+        class="flex justify-center items-center bg-red-100"
+      >
+        <div contenteditable="true" id="editable" onclick="focusEditableDiv()"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./editor.js"></script>
 </html>

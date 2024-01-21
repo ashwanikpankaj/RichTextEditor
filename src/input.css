@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#editorContainer{
+ width: 50rem;
+ height: 50rem;
+}
+
+#editableConatiner{
+    width: 48rem;
+    height: 47.2rem;
+}
+
+#editable{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.active{
+    background-color: #b9b7b7;
+}
