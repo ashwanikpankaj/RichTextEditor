@@ -89,8 +89,7 @@ optionsButton.forEach((button) => {
     modifyText(button.id, false, null);
     removeHighlighter(button);
     focusEditableDiv();
-    const selection = window.getSelection().getRangeAt(0);
-    console.log({selection})
+    getRange()
   });
 });
 
@@ -110,14 +109,15 @@ function selectFontColor() {
   focusEditableDiv();
 }
 
-// function createRange() {
-//     // below code is settng the range of the selected 
-//   const range = document.createRange();
-//   range.selectNode(editableDiv);
-//   range.collapse(false);
+function getRange(){
+    const selection = window.getSelection();
+    // if selection is collapsed then no text is selected
+   if(selection.isCollapsed){
+    console.log(selection)
+    const anchorNode = selection.anchorNode.parentNode;
+    var siblingTextNode = document.createTextNode();
+    anchorNode.insertBefore(siblingTextNode, anchorNode.nextSibling);
+    siblingTextNode.focus();
 
-//   // create an new range 
-//   const newRange = document.createRange();
-//   newRange.setStartAfter()
-
-// }
+   }
+}
