@@ -548,12 +548,21 @@ video {
   margin: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .flex {
   display: flex;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -564,18 +573,33 @@ video {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .bg-cyan-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(6 182 212 / var(--tw-bg-opacity));
-}
-
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -595,22 +619,34 @@ video {
   text-decoration-line: underline;
 }
 
-#editorContainer{
-  width: 50rem;
-  height: 50rem;
+#editorContainer {
+  width: 100%;
+  height: 100vh;
 }
 
-#editableConatiner{
-  width: 48rem;
-  height: 47.2rem;
+#editableConatiner {
+  width: 100%;
+  height: 85vh;
 }
 
-#editable{
+#editable {
   height: 100%;
   width: 100%;
   padding: 1rem;
 }
 
-.active{
+.active {
   background-color: #b9b7b7;
+}
+
+#editableConatiner ol {
+  list-style-type: decimal;
+}
+
+#editableConatiner ul {
+  list-style-type: disc;
+}
+
+select{
+  min-width: 5rem;
 }

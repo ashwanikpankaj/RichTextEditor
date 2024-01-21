@@ -44,11 +44,55 @@
         <button id="insertUnorderedList" class="option-button">
           <i class="fa-solid fa-list"></i>
         </button>
+
+          <!-- Undo/Redo -->
+          <button id="undo" class="option-button">
+            <i class="fa-solid fa-rotate-left"></i>
+          </button>
+          <button id="redo" class="option-button">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+
+             <!-- Alignment -->
+        <button id="justifyLeft" class="option-button align">
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+        <button id="justifyCenter" class="option-button align">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        <button id="justifyRight" class="option-button align">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <button id="justifyFull" class="option-button align">
+          <i class="fa-solid fa-align-justify"></i>
+        </button>
+        <button id="indent" class="option-button spacing">
+          <i class="fa-solid fa-indent"></i>
+        </button>
+        <button id="outdent" class="option-button spacing">
+          <i class="fa-solid fa-outdent"></i>
+        </button>
+
       </div>
+
+    <!-- second row -->
+    <div class="my-4 flex justify-start items-center gap-2">
+      <select id="elementType" class="border-solid border-2 rounded-md"></select>
+      <select id="selectFontType" class="border-solid border-2 rounded-md"></select>
+      <div class="flex">
+        <input type="color" class="rounded" id="colorPicker" onchange="selectFontColor()"/>
+        <div>Font Color</div>
+      </div>
+      <div class="flex">
+        <input type="color" id="highLighter" onchange="selectHighlighter()"/>
+        <div>Highlight</div>
+      </div>
+     
+    </div>
       <!-- editable div -->
       <div
         id="editableConatiner"
-        class="flex justify-center items-center bg-red-100"
+        class="flex justify-center items-center"
       >
         <div contenteditable="true" id="editable" onclick="focusEditableDiv()"></div>
       </div>

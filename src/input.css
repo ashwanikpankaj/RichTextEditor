@@ -2,22 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-#editorContainer{
- width: 50rem;
- height: 50rem;
+#editorContainer {
+ width: 100%;
+height: 100vh;
 }
 
-#editableConatiner{
-    width: 48rem;
-    height: 47.2rem;
+#editableConatiner {
+width: 100%;
+height: 85vh;
 }
 
-#editable{
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
+#editable {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
 }
 
-.active{
-    background-color: #b9b7b7;
+.active {
+  background-color: #b9b7b7;
+}
+
+#editableConatiner ol {
+  list-style-type: decimal;
+}
+
+#editableConatiner ul {
+  list-style-type: disc;
+}
+
+select{
+    min-width: 5rem;
 }
